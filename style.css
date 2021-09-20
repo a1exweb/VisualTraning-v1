@@ -2,15 +2,19 @@ body {
   font-family: sans-serif;
   display: flex;
   justify-content: center;
+  height: 100vh;
   font-size: calc(18px + 22 * ((100vw - 320px) / 960));
 }
 
 p {
   display: block;
   margin: auto;
-  padding: 150px 5px;
+  padding: 0 5px;
   max-width: 1400px;
   max-height: 80vh;
+  border: 1px dashed #eee;
+  border-right: 0;
+  border-left: 0;
   overflow-y: scroll;
 }
 
@@ -44,6 +48,7 @@ p::-webkit-scrollbar {
 
 #traning {
   bottom: 0;
+  background: transparent;
 }
 
 #theme, #traning {
@@ -57,7 +62,6 @@ p::-webkit-scrollbar {
   font-size: calc(18px + 22 * ((100vw - 320px) / 960));
 }
 
-
 @media (min-width: 980px) {
   .description {
     display: block;
@@ -70,10 +74,9 @@ p::-webkit-scrollbar {
   }
 
   p {
-    padding: 200px 20px;
+    padding: 10px 20px;
   }
 }
-
 .description {
   display: none;
 }
